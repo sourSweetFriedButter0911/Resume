@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+.content {
+    padding-top: 50px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Align items vertically */
+    margin: 5rem 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+
+.text-container {
+    background-color: #f4f4f4;
+    color: #444;
+    border: 5px solid #ddd;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 75%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3;
+}
+
+/* Add the styles for the photo */
+.photo {
+    height: 300px;
+    border-radius: 10px;
+    /* Optional: Add border radius */
+    margin-left: auto;
+    /* Add some space between the text container 
+    and the photo */
+}
+
+
+.name {
+    font-size: 30px;
+    /* Fixed font size for the name */
+}
+
+.role {
+    font-size: 20px;
+    /* Fixed font size for the role */
+}
+
+.intro {
+    font-size: 30px;
+    /* Fixed font size for the intro */
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Add the styles for the about me container */
+.about-me {
+    background-color: #444;
+    padding: 5rem;
+    margin: 0 5rem;
+    border-radius: 10px;
+}
+
+.about-me h2 {
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    text-align: justify;
+
+}
+
+.bottom-containers {
+    display: flex;
+    /* Use flexbox */
+    justify-content: space-between;
+    /* Add space between the containers */
+    margin: 5rem 5rem;
+    /* Add some space between "About Me" and the bottom containers */
+    line-height: 2;
+}
+
+.container1,
+.container2 {
+    background-color: inherit;
+    /* Inherit background color from parent */
+    padding: 20px;
+    /* Add padding */
+    border-radius: 10px;
+    /* Add border radius */
+    flex: 1;
+    /* Distribute space evenly between the containers */
+}
+
+.container1 {
+    background-color: #f4f4f4;
+    /* Example background color for container 1 */
+    border: 10px solid #ddd;
+    margin-right: 20px;
+    /* Add some space between the containers */
+}
+
+.container2 {
+    background-color: #ddd;
+    /* Example background color for container 2 */
+}
+
+.container1 h3,
+.container2 h3 {
+    margin-bottom: 10px;
+    /* Add margin below the heading */
+}
+
+.container1 ul,
+.container2 ul {
+    padding-left: 20px;
+    /* Add left padding for bullet points */
+}
+
+.container1 li,
+.container2 li {
+    margin-bottom: 10px;
+    /* Add margin between list items */
+}
+
+.container1 li p,
+.container2 li p {
+    margin: 0;
+    /* Reset paragraph margin */
+}
+
+.additional-containers {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 5rem;
+    line-height: 2;
+}
+
+.container3,
+.container4,
+.container5 {
+    background-color: inherit;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+
+}
+
+.container3 {
+    background-color: #f8f8f8;
+    /* Example background color for container 3 */
+    margin-right: 20px;
+    /* Add some space between the containers */
+    border: 10px solid #ddd;
+}
+
+.container4 {
+    background-color: #e8e8e8;
+    /* Example background color for container 4 */
+    margin-right: 20px;
+    /* Add some space between the containers */
+}
+
+.container5 {
+    background-color: #d8d8d8;
+    /* Example background color for container 5 */
+}
+
+.container3 h3,
+.container4 h3,
+.container5 h3 {
+    margin-bottom: 10px;
+    /* Add margin below the heading */
+}
+
+.container3 ul,
+.container4 ul,
+.container5 ul {
+    padding-left: 20px;
+    /* Add left padding for bullet points */
+}
+
+.container3 li,
+.container4 li,
+.container5 li {
+    margin-bottom: 10px;
+    /* Add margin between list items */
+}
+
+.container3 li p,
+.container4 li p,
+.container5 li p {
+    margin: 0;
+    /* Reset paragraph margin */
+}
+
+.game-container {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    text-align: center;
+    margin: 5rem 5rem;
+    line-height: 2;
+}
+
+.game-container h2 {
+    margin-bottom: 10px;
+}
+
+.input-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container label {
+    margin-right: 10px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.input-container input, .input-container select {
+    margin-left: 5px;
+}
+
+#calculateBtn {
+    margin-top: 10px;
+}
+
+.contact-container {
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.contact-container h2 {
+    font-size: 24px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-container a {
+    color: #333;
+    text-decoration: none;
+}

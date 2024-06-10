@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Navigation</title>
+    <link rel="stylesheet" href="./resources/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="name">Doan Nhat Minh Do</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="scroll-to-top">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Experiences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="text-container">
+                <p class="intro">Hi! I'm <span class="name">Doan Nhat Minh Do</span></p>
+                <p class="role">Full-stack Developer</p>
+            </div>
+            <div class="photo">
+                <img src="./resources/avatar.jpg" alt="Photo" class="photo">
+            </div>
+        </div>
+        <div id="education" class="about-me">
+            <h2>About Me</h2>
+            <p>I am a recent graduate keen on looking for new challenges. My goal at this point of in my career is to
+                deliver the fresh knowledges and skills that I have gained during my undergraduate and current post
+                graduate studies to an organisation that values hard work, integrity and excellent attention to details.
+            </p>
+        </div>
+        <div class="bottom-containers">
+            <div class="container1">
+                <h3>EDUCATION</h3>
+                <ul>
+                    <li>
+                        <p>Bachelor of Science</p>
+                        <p>Major in Applied Mathematics</p>
+                        <p>Swinburne University of Technology, Hawthorn</p>
+                        <p>Aug 2020 – Dec 2021</p>
+                    </li>
+                    <li>
+                        <p>Diploma of Engineering</p>
+                        <p>Engineering Stream</p>
+                        <p>Monash College, Clayton</p>
+                        <p>July 2016 – Jun 2017</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="container2">
+                <h3>EXPERIENCES</h3>
+                <ul>
+                    <li>
+                        <p>Mathematics and Physics Private Tutoring</p>
+                        <ul>
+                            <li>
+                                <p>Planning programs of study for first year university students.</p>
+                                <p>Preparing students for tests and examinations.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Jun 2017 – Current</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Amazon Flex Delivery Partner</p>
+                        <ul>
+                            <li>Loading items and packages from warehouse and deliver to customers in a timely manner.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Achievement: An average customer satisfaction and reliability of more than 95%.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Jan 2020 – Current</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Volunteering – Monash University Foundation Year Student Leader</p>
+                        <ul>
+                            <li>Support new international students when they begin their studies at Monash College.</li>
+                            <li>Organising events for international students at Monash College.</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p id="skills">Aug 2015 – Jun 2016</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="additional-containers">
+            <div class="container3">
+                <h3>SKILLS</h3>
+                <ul>
+                    <li>
+                        <p>Proficient in Microsoft Office:</p>
+                        <ul>
+                            <li>Word, Excel and PowerPoint.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Proficient in numerical analysis using MATLAB.</p>
+                    </li>
+                    <li>
+                        <p>Proficient in Mechanical Engineering Design using SOLIDWORKS.</p>
+                    </li>
+                    <li>
+                        <p>Strong verbal and written communication skills.</p>
+                    </li>
+                    <li>
+                        <p>Strong analytical and critical thinking skills.</p>
+                    </li>
+                    <li>
+                        <p>Languages: English (Fluent), Vietnamese (Native).</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="container4">
+                <h3>CERTIFICATIONS</h3>
+                <ul>
+                    <li>
+                        <p>Cambridge First Certificate in English (FCE).</p>
+                    </li>
+                    <li>
+                        <p>Microsoft Office Specialist (Microsoft PowerPoint 2010).</p>
+                    </li>
+                    <li>
+                        <p>Full Australian Driver Licence.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="container5">
+                <h3>INTERESTS</h3>
+                <ul>
+                    <li>
+                        <p>Sports: Table Tennis, Badminton.</p>
+                    </li>
+                    <li>
+                        <p>Mathematics: Numerical and computational mechanics, Optimisation.</p>
+                    </li>
+                    <li>
+                        <p>Engineering: Thermodynamics.</p>
+                    </li>
+                    <li>
+                        <p>Arts: Photography.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="game-container">
+            <h2>Calculator</h2>
+            <div class="input-container">
+                <label for="num1">Enter first number:</label>
+                <input type="number" id="num1">
+                <label for="operation">Select operation:</label>
+                <select id="operation">
+                    <option value="add">Addition (+)</option>
+                    <option value="subtract">Subtraction (-)</option>
+                    <option value="multiply">Multiplication (*)</option>
+                    <option value="divide">Division (/)</option>
+                </select>
+                <label for="num2">Enter second number:</label>
+                <input type="number" id="num2">
+            </div>
+            <button id="calculateBtn">Calculate</button>
+            <div id="result"></div>
+        </div>
+    
+        <script src="./script.js"></script>
+
+    </main>
+
+</body>
+
+</html>
